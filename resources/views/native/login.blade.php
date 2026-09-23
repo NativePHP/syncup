@@ -15,7 +15,7 @@
                 <text class="text-sm font-medium text-theme-on-background">Email</text>
                 <row class="items-center gap-3">
                     <icon name="mail" :size="20" class="text-theme-on-background" />
-                    <outlined-text-input placeholder="name@example.com" class="flex-1" />
+                    <outlined-text-input native:model="email" placeholder="name@example.com" keyboard="email" class="flex-1" />
                 </row>
             </column>
 
@@ -23,12 +23,14 @@
                 <text class="text-sm font-medium text-theme-on-background">Password</text>
                 <row class="items-center gap-3">
                     <icon name="lock" :size="20" class="text-theme-on-background" />
-                    <outlined-text-input placeholder="••••••••" :secure="true" class="flex-1" />
-                    <icon name="visibility" :size="20" class="text-theme-on-background" />
+                    <outlined-text-input native:model="password" placeholder="••••••••" :secure="! $showPassword" class="flex-1" />
+                    <pressable @press="toggleVisibility">
+                        <icon name="{{ $showPassword ? 'visibility_off' : 'visibility' }}" :size="20" class="text-theme-on-background" />
+                    </pressable>
                 </row>
             </column>
 
-            <pressable class="w-full bg-theme-primary rounded-2xl py-4 items-center mt-2">
+            <pressable @press="login" class="w-full bg-theme-primary rounded-2xl py-4 items-center mt-2">
                 <text class="text-lg font-semibold text-theme-on-primary">Log In</text>
             </pressable>
 
@@ -37,7 +39,9 @@
         {{-- Create account --}}
         <row class="w-full justify-center gap-1">
             <text class="text-sm text-theme-on-background">New here?</text>
-            <text class="text-sm font-semibold text-theme-primary">Create an account</text>
+            <pressable @navigate="route('register')">
+                <text class="text-sm font-semibold text-theme-primary">Create an account</text>
+            </pressable>
         </row>
 
     </column>
