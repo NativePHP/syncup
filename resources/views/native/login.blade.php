@@ -39,7 +39,7 @@
         {{-- Create account --}}
         <row class="w-full justify-center gap-1">
             <text class="text-sm text-theme-on-background">New here?</text>
-            <pressable @press="createAccount">
+            <pressable @navigate='/register'>
                 <text class="text-sm font-semibold text-theme-primary">Create an account</text>
             </pressable>
         </row>

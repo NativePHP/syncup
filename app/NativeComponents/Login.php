@@ -9,7 +9,6 @@ use Native\Mobile\Facades\Dialog;
 class Login extends NativeComponent
 {
     public string $email = '';
-
     public string $password = '';
 
     public bool $showPassword = false;
@@ -26,7 +25,7 @@ class Login extends NativeComponent
 
     public function login(): void
     {
-        Dialog::toast('Logging in as '.$this->email);
+        $this->replace('/chats');
     }
 
     public function render(): View

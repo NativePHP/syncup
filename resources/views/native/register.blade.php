@@ -52,7 +52,7 @@
         {{-- Back to login --}}
         <row class="w-full justify-center gap-1">
             <text class="text-sm text-theme-on-background">Already have an account?</text>
-            <pressable @press="backToLogin">
+            <pressable @navigate.back>
                 <text class="text-sm font-semibold text-theme-primary">Log in</text>
             </pressable>
         </row>
