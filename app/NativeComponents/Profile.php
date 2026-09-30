@@ -11,6 +11,11 @@ class Profile extends NativeComponent
         return 'Profile';
     }
 
+    public function logout(): void
+    {
+        $this->replace('/');
+    }
+
     public function render(): \Illuminate\View\View
     {
         return view('native.profile');

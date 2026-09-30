@@ -4,7 +4,6 @@ namespace App\NativeComponents;
 
 use Illuminate\View\View;
 use Native\Mobile\Edge\NativeComponent;
-use Native\Mobile\Facades\Dialog;
 
 class Register extends NativeComponent
 {
@@ -16,9 +15,15 @@ class Register extends NativeComponent
 
     public string $passwordConfirmation = '';
 
+    public string $nameError = '';
+
+    public string $emailError = '';
+
+    public string $passwordError = '';
+
     public function register(): void
     {
-        Dialog::toast('Creating account for '.$this->email);
+        $this->replace('/chats');
     }
 
     public function backToLogin(): void

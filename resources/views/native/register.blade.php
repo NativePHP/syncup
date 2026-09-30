@@ -15,7 +15,12 @@
                 <text class="text-sm font-medium text-theme-on-background">Name</text>
                 <row class="items-center gap-3">
                     <icon name="person" :size="20" class="text-theme-on-background" />
-                    <outlined-text-input placeholder="Jane Doe" native:model="name" class="flex-1" />
+                    <outlined-text-input
+                        placeholder="Jane Doe"
+                        native:model="name"
+                        :is-error="$nameError !== ''"
+                        supporting="{{ $nameError }}"
+                        class="flex-1" />
                 </row>
             </column>
 
@@ -23,7 +28,13 @@
                 <text class="text-sm font-medium text-theme-on-background">Email</text>
                 <row class="items-center gap-3">
                     <icon name="mail" :size="20" class="text-theme-on-background" />
-                    <outlined-text-input placeholder="name@example.com" native:model="email" keyboard="email" class="flex-1" />
+                    <outlined-text-input
+                        placeholder="name@example.com"
+                        native:model="email"
+                        keyboard="email"
+                        :is-error="$emailError !== ''"
+                        supporting="{{ $emailError }}"
+                        class="flex-1" />
                 </row>
             </column>
 
@@ -31,7 +42,13 @@
                 <text class="text-sm font-medium text-theme-on-background">Password</text>
                 <row class="items-center gap-3">
                     <icon name="lock" :size="20" class="text-theme-on-background" />
-                    <outlined-text-input placeholder="••••••••" native:model="password" :secure="true" class="flex-1" />
+                    <outlined-text-input
+                        placeholder="••••••••"
+                        native:model="password"
+                        :secure="true"
+                        :is-error="$passwordError !== ''"
+                        supporting="{{ $passwordError }}"
+                        class="flex-1" />
                 </row>
             </column>
 
