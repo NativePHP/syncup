@@ -13,6 +13,7 @@ Each commit holds the work from one video in the course, so you can jump to the 
 | `Initial commit` | Starting point: a fresh NativePHP Mobile starter app |
 | `Building UI With EDGE` | The Login screen, built with EDGE elements |
 | `State and Interactions` | Component state, form binding, and the Register screen |
+| `Layouts and Navigation` | The tab bar layout, title bars, and moving between screens |
 
 ## Getting Started
 

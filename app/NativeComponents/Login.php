@@ -21,7 +21,7 @@ class Login extends NativeComponent
 
     public function login(): void
     {
-        Dialog::toast('Logging in as '.$this->email);
+        $this->replace('/chats');
     }
 
     public function render(): View
