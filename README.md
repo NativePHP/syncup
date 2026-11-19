@@ -2,6 +2,8 @@
 
 The companion repository for the **NativePHP Masterclass**. SyncUp is a mobile chat app built with Laravel and [NativePHP Mobile](https://nativephp.com/docs/mobile), using fully native UI (SuperNative components and EDGE elements).
 
+The backend it talks to lives in its own repository: [NativePHP/syncup-api](https://github.com/NativePHP/syncup-api).
+
 **Sign up for the course:** [nativephp.com/course](https://nativephp.com/course)
 
 ## How This Repository Is Organized
@@ -14,6 +16,7 @@ Each commit holds the work from one video in the course, so you can jump to the 
 | `Building UI With EDGE` | The Login screen, built with EDGE elements |
 | `State and Interactions` | Component state, form binding, and the Register screen |
 | `Layouts and Navigation` | The tab bar layout, title bars, and moving between screens |
+| `Authentication` | Logging in against the backend, staying logged in with an encrypted token, and logging out |
 
 ## Getting Started
 

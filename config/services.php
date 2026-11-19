@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'syncup' => [
+        'base_url' => env('API_BASE_URL', 'http://syncup-api.test/api'),
+    ],
+
 ];

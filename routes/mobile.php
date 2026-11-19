@@ -1,5 +1,6 @@
 <?php
 
+use App\NativeComponents\AuthGate;
 use App\NativeComponents\ChatDetail;
 use App\NativeComponents\Chats;
 use App\NativeComponents\Friends;
@@ -9,7 +10,8 @@ use App\NativeComponents\Profile;
 use App\NativeComponents\Register;
 use Illuminate\Support\Facades\Route;
 
-Route::native('/', Login::class)->name('login');
+Route::native('/', AuthGate::class);
+Route::native('/login', Login::class);
 Route::native('/register', Register::class)->name('register');
 
 Route::nativeGroup(AppTabsLayout::class, function () {
