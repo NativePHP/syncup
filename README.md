@@ -17,6 +17,7 @@ Each commit holds the work from one video in the course, so you can jump to the 
 | `State and Interactions` | Component state, form binding, and the Register screen |
 | `Layouts and Navigation` | The tab bar layout, title bars, and moving between screens |
 | `Authentication` | Logging in against the backend, staying logged in with an encrypted token, and logging out |
+| `The Chat List in EDGE` | The chat list with custom rows, press feedback, accessibility labels, and an empty state |
 
 ## Getting Started
 
