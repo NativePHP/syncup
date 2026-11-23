@@ -18,6 +18,7 @@ Each commit holds the work from one video in the course, so you can jump to the 
 | `Layouts and Navigation` | The tab bar layout, title bars, and moving between screens |
 | `Authentication` | Logging in against the backend, staying logged in with an encrypted token, and logging out |
 | `The Chat List in EDGE` | The chat list with custom rows, press feedback, accessibility labels, and an empty state |
+| `The Conversation Screen` | Message bubbles, date separators, opening on the latest message, and the typing box |
 
 ## Getting Started
 
